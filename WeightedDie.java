@@ -19,7 +19,7 @@
     
         /*
          * Simulates die roll with even numbers being twice as likely
-         * 
+         * the output will be the result of this unfair roll
          */
         public int roll() {
             int n = (int)(Math.random()*9+1);
