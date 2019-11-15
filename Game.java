@@ -1,6 +1,8 @@
 
 /**
  * Plays a dice rolling game.
+ * See javadoc comments for description of games
+ * There is an unfair guaranteed-winner game
  *
  * @author Brandon Yazdi
  */
@@ -54,7 +56,7 @@ public class Game
     }
     
     /*
-     * counter but for weighted die
+     * see description of counter method but this is for weighted die
      */
     public int weightedCounter(int desired) {
         WeightedDie gameDie = new WeightedDie();
@@ -67,8 +69,10 @@ public class Game
             return count;
     }
     
-    /*works like playGame except it will keep playing the game
-     * until Player 1 wins or ties.
+    /* 
+     * exactly like playGame except it will keep playing the game
+     * until Player 1 wins or ties
+     * see playGame method comments for details
      */
     public void playUnfairGame() {
         int player1 = rollTwoDice();
