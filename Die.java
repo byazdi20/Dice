@@ -1,7 +1,7 @@
 
 /**
  * Write a Die class. This class will represent a fair, six-sided die.
- * It must keep track of face value. Six sides are 2, 3, 4, 5, 6, and 7.
+ * It must keep track of face value. Six sides are 1, 2, 3, 4, 5, 6.
  * Follows directions as we were not told the values the sides must be.
  * 
  * Brandon Yazdi
@@ -12,13 +12,15 @@ public class Die
 
     /*
      * shows the last roll value
+     * output is value
      */
     public int getValue() {
         return value;
     }
 
     /*
-     * rolls die
+     * "rolls" die
+     * outputs new value rolled which is a pseudorandom int 1 thru 6
      */
     public int roll() {
         value = (int)(Math.random()*6+1);
@@ -34,6 +36,9 @@ public class Die
 
     /*
      * rolls die n times and prints values
+     * n is user-inputted
+     * for each n, prints the roll value separately
+     * rolls spaced on a single line with commas in between
      */
     public void printSomeRolls(int n) {
         if (n==1) {
