@@ -1,8 +1,7 @@
     
     /**
-     * Write a Die class. This class will represent a fair, six-sided die.
-     * It must keep track of face value. Six sides are 2, 3, 4, 5, 6, and 7.
-     * Follows directions as we were not told the values the sides must be.
+     * This is a special Die similar to the Die class with the same methods except the non-required one.
+     * The difference is that WeightedDie is not a FAIR die. Even numbers are twice as likely as odd.
      * 
      * Brandon Yazdi
      */
